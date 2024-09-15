@@ -1,0 +1,82 @@
+div {
+    height: 500px;
+    width: 500px;
+}
+
+
+@media screen and (max-width: 420px) {
+    .resp {
+        background-color: rgb(102, 102, 102);
+
+    }
+
+    .cor::after {
+        content: "Cor: Cinza";
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+    .resp {
+        background-color: rgb(255, 98, 0);
+        color: white;
+    }
+
+    .cor::after {
+        content: "Cor: Laranja";
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .resp {
+        background-color: rgb(255, 0, 144);
+        color: white;
+    }
+
+    .cor::after {
+        content: "Cor: Rosa";
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1080px) {
+    .resp {
+        background-color: rgb(255, 0, 0);
+        color: white;
+    }
+
+    .cor::after {
+        content: "Cor: Vermelho";
+    }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1366px) {
+    .resp {
+        background-color: rgb(180, 105, 255);
+        color: white;
+    }
+
+    .cor::after {
+        content: "Cor: Violeta";
+    }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+    .resp {
+        background-color: rgb(255, 218, 71);
+        color: white;
+    }
+
+    .cor::after {
+        content: "Cor: Amarelo";
+    }
+}
+
+@media (min-width: 1921px) {
+    .resp {
+        background-color: rgb(64, 222, 36);
+        color: white;
+    }
+
+    .cor::after {
+        content: "Cor: Verde";
+    }
+}

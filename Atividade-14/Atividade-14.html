@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformar Texto</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 300px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Transformar Texto</h1>
+
+<input type="text" id="texto" placeholder="Digite seu texto aqui" />
+
+<div>
+    <input type="radio" id="maiusculas" name="transformacao" value="maiusculas">
+    <label for="maiusculas">Maiúsculas</label>
+
+    <input type="radio" id="minusculas" name="transformacao" value="minusculas">
+    <label for="minusculas">Minúsculas</label>
+</div>
+
+<button onclick="transformarTexto()">Transformar</button>
+
+<p id="resultado"></p>
+
+<script>
+    function transformarTexto() {
+        const textoInput = document.getElementById('texto').value;
+        const resultado = document.getElementById('resultado');
+        
+        if (document.getElementById('maiusculas').checked) {
+            resultado.innerText = textoInput.toUpperCase();
+        } else if (document.getElementById('minusculas').checked) {
+            resultado.innerText = textoInput.toLowerCase();
+        } else {
+            resultado.innerText = "Por favor, selecione uma opção.";
+        }
+    }
+</script>
+
+</body>
+</html>

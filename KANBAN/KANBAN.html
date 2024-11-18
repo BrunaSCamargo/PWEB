@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanabn Bruninha</title>
+    <link rel="stylesheet" href="KANBAN-CARINHA.css">    
+</head>
+<body>
+    <div class="header">
+        <h1>Gerenciador de Viagens</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="coluna" id="colPreparativos">
+            <div class="head">
+            <span>Preparativos</span>
+            <button class="addNovaTarefa" onclick="openModal()">+</button>
+            </div>
+            <div class="body">
+                
+            </div>
+        </div>
+
+
+        <div class="coluna">
+            <div class="head">
+            <span>Durante</span>
+            <button class="addNovaTarefa" onclick="openModal()">+</button>
+            </div>
+            <div class="body">
+                
+            </div>
+        </div>
+
+
+        <div class="coluna">
+            <div class="head">
+            <span>Finalização</span>
+            <button class="addNovaTarefa" onclick="openModal()">+</button>
+            </div>
+            <div class="body">
+                
+            </div>
+        </div>
+    </div>
+    <div id="modal">
+        <div class="box">
+            <div class="head">
+                <span>Adicionar Tarefa</span>
+            </div>
+
+            <div class="form">
+                <div class="form-group">
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricao" rows="4"></textarea>  
+                </div>
+
+                <div class="form-group">
+                    <label for="prioridade">Prioridade:</label>
+                    <select id="prioridade">
+                        <option value="baixa">Baixa Prioridade</option>
+                        <option value="alta">Alta Prioridade</option>
+                    </select>
+                </div>
+
+                <button class="addtarefa" onclick="criarTarefa()">Salvar</button>
+                <button class="addtarefa" onclick="closeModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <script src="KANBAN-CARINHA.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff6fe099;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 30px;
+}
+
+button.addtarefa {
+    border: none;
+    background-color: #456;
+    color: #789;
+    font-size: 16px;
+    padding: 9px 22px;
+    border-radius: 6px;
+    cursor: 50px 0;
+}
+
+button.addNovaTarefa {
+    border: none;
+    background-color: #456;
+    color: #789;
+    font-size: 16px;
+    padding: 9px 22px;
+    border-radius: 6px;
+    cursor: 50px 0;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.container .coluna {
+    width: 250px;
+    height: 600px;
+    background-color: blue;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .coluna .header {
+    padding: 15px;
+    text-align: left;
+}
+
+.container .coluna .body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container .coluna .body .card {
+    background-color: #f3ceeb;
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .coluna .body .card .info{
+    font-size: 14px;
+    color: rgba(136, 136, 136, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(176, 176, 176);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal .box {
+    background-color: bisque;
+    width: 400px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+#modal .box .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#modal .box .header span {
+    font-size: 19px;
+    font-weight: 700;
+    color: #333;
+}
+
+#modal .box .header button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #444;
+}
+
+#modal .box .form {
+    padding: 20px;
+}
+
+#modal .box .form .form-group {
+    margin-bottom: 15px;
+}
+#modal .box .form label {
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+#modal .box .form textarea {
+    width: 100%;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #123;
+    color: #999;
+}
+
+#modal .box .form select {
+    width: 100%;
+    font-size: 14px;
+    color: #456;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #345;
+}
+
+#modal .box .form button {
+    margin: auto;
+}
+
+#form-group .prioridade .baixa {
+    background-color: #a0d0f3;
+}
+
+#form-group .prioridade .baixa {
+    background-color: #a751f3;
+}

@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #ff6fe099;
+    background-color: #f13bc9;
 }
 
 .header {
@@ -15,14 +15,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blueviolet;
+    background-color: f13bc9;
     padding: 30px;
 }
 
 button.addtarefa {
     border: none;
-    background-color: #456;
-    color: #789;
+    background-color: rgb(227, 77, 169);
+    color: rgb(76, 76, 76);
     font-size: 16px;
     padding: 9px 22px;
     border-radius: 6px;
@@ -31,8 +31,8 @@ button.addtarefa {
 
 button.addNovaTarefa {
     border: none;
-    background-color: #456;
-    color: #789;
+    background-color: #eba2db;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     padding: 9px 22px;
     border-radius: 6px;
@@ -50,7 +50,7 @@ button.addNovaTarefa {
 .container .coluna {
     width: 250px;
     height: 600px;
-    background-color: blue;
+    background-color: #eba2db;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -78,7 +78,7 @@ button.addNovaTarefa {
 
 .container .coluna .body .card .info{
     font-size: 14px;
-    color: rgba(136, 136, 136, 0.6);
+    color: rgba(69, 69, 69, 0.6);
     display: flex;
     flex-direction: column;
 }
@@ -89,14 +89,14 @@ button.addNovaTarefa {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgb(176, 176, 176);
+    background-color: #fdfdfd9e;
     display: none;
     justify-content: center;
     align-items: center;
 }
 
 #modal .box {
-    background-color: bisque;
+    background-color: #eba2db;
     width: 400px;
     border-radius: 7px;
     overflow: hidden;
@@ -106,13 +106,13 @@ button.addNovaTarefa {
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eba2db;
 }
 
 #modal .box .header span {
     font-size: 19px;
     font-weight: 700;
-    color: #333;
+    color: #767676;
 }
 
 #modal .box .header button {
@@ -121,7 +121,7 @@ button.addNovaTarefa {
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
-    color: #444;
+    color: #ff4bcc;
 }
 
 #modal .box .form {
@@ -134,7 +134,7 @@ button.addNovaTarefa {
 #modal .box .form label {
     display: block;
     font-size: 14px;
-    color: #999;
+    color: #606060;
     margin-bottom: 5px;
 }
 
@@ -143,27 +143,19 @@ button.addNovaTarefa {
     border-radius: 7px;
     padding: 10px 15px;
     font-size: 14px;
-    border: 1px solid #123;
-    color: #999;
+    border: 1px solid rgb(44, 44, 44);
+    color: #353535;
 }
 
 #modal .box .form select {
     width: 100%;
     font-size: 14px;
-    color: #456;
+    color: rgb(87, 87, 87);
     padding: 10px;
     border-radius: 7px;
-    border: 1px solid #345;
+    border: 1px solid rgb(45, 45, 45);
 }
 
 #modal .box .form button {
     margin: auto;
-}
-
-#form-group .prioridade .baixa {
-    background-color: #a0d0f3;
-}
-
-#form-group .prioridade .baixa {
-    background-color: #a751f3;
 }
